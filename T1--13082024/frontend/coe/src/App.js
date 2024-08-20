@@ -13,19 +13,10 @@ import Header from "./components/header"; // Import Header component
 import './App.css'; // Import additional CSS for modal styling
 
 function App() {
-  const [projects, setProjects] = useState([]);
+ 
   const [showEnquiryForm, setShowEnquiryForm] = useState(false); // State for showing/hiding enquiry form
 
-  useEffect(() => {
-    axios
-      .get("http://localhost:5000/projects")
-      .then((response) => {
-        setProjects(response.data);
-      })
-      .catch((error) => {
-        console.error("There was an error fetching the projects!", error);
-      });
-  }, []);
+ 
 
   const router = createBrowserRouter([
     {
@@ -58,16 +49,7 @@ function App() {
     },
   ]);
 
-  const addProject = (newProject) => {
-    axios
-      .post("http://localhost:5000/projects", newProject)
-      .then((response) => {
-        setProjects([...projects, newProject]);
-      })
-      .catch((error) => {
-        console.error("There was an error adding the project!", error);
-      });
-  };
+ 
 
   const handleLetsTalkClick = () => {
     setShowEnquiryForm(true);

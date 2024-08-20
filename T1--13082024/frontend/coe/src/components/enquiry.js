@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import '../App.css'; // Import your updated CSS file
-import axios from 'axios'; // Import Axios for making HTTP requests
+import axios from 'axios';
 
 const EnquiryForm = ({ showForm, handleClose }) => {
   const [formData, setFormData] = useState({
@@ -64,7 +64,6 @@ const EnquiryForm = ({ showForm, handleClose }) => {
         [name]: value,
       }));
 
-      // Validate as user types
       validateField(name, value);
     }
   };
@@ -79,32 +78,29 @@ const EnquiryForm = ({ showForm, handleClose }) => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+
     // Validate all fields before submission
     Object.keys(formData).forEach((field) => validateField(field, formData[field]));
 
     if (!Object.values(errors).some((error) => error)) {
-      try {
-        // Send form data to Flask backend
-        const response = await axios.post('http://localhost:5000/api/send-enquiry', formData);
-        if (response.status === 200) {
-          alert('Form submitted successfully!');
-        } else {
-          alert('Failed to submit the form.');
-        }
-      } catch (error) {
-        console.error('There was an error submitting the form:', error);
-      }
-
-      // Clear form data if needed
-      setFormData({
-        name: '',
-        contactNumber: '',
-        email: '',
-        services: [],
-        message: '',
-      });
+      axios.post(`${process.env.REACT_APP_API_URL}/send-enquiry`, formData)
+        .then(response => {
+          alert(response.data.message || 'Form submitted successfully!');
+          setFormData({
+            name: '',
+            contactNumber: '',
+            email: '',
+            services: [],
+            message: '',
+          });
+          handleClose(); // Close the form
+        })
+        .catch(error => {
+          console.error('Submission error:', error);
+          alert('There was an error submitting the form.');
+        });
     }
   };
 
@@ -112,7 +108,7 @@ const EnquiryForm = ({ showForm, handleClose }) => {
 
   return (
     <div className="modal-overlay" onClick={handleClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ backgroundColor: "white" }}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ backgroundColor: 'white' }}>
         <button className="close-button" onClick={handleClose}>
           &times;
         </button>
