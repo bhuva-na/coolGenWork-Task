@@ -18,6 +18,8 @@ const EnquiryForm = ({ showForm, handleClose }) => {
     email: '',
   });
 
+  const API_URL = process.env.REACT_APP_API_URL;
+
   const validateField = (name, value) => {
     let errorMsg = '';
 
@@ -83,9 +85,13 @@ const EnquiryForm = ({ showForm, handleClose }) => {
 
     // Validate all fields before submission
     Object.keys(formData).forEach((field) => validateField(field, formData[field]));
-    const API_URL = process.env.REACT_APP_API_URL;
+
     if (!Object.values(errors).some((error) => error)) {
-      axios.post(`${API_URL}/send-enquiry`, formData)
+      axios.post(`${API_URL}/send-enquiry`, formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
         .then(response => {
           alert(response.data.message || 'Form submitted successfully!');
           setFormData({
@@ -98,8 +104,19 @@ const EnquiryForm = ({ showForm, handleClose }) => {
           handleClose(); // Close the form
         })
         .catch(error => {
-          console.error('Submission error:', error);
-          alert('There was an error submitting the form.');
+          if (error.response) {
+            // The server responded with a status code outside the 2xx range
+            console.error('Server responded with error:', error.response.data);
+            alert(`Submission failed: ${error.response.data.message || 'Unexpected error occurred.'}`);
+          } else if (error.request) {
+            // The request was made but no response was received
+            console.error('No response received:', error.request);
+            alert('No response received from the server. Please try again later.');
+          } else {
+            // Something else went wrong
+            console.error('Error:', error.message);
+            alert('An error occurred during submission. Please try again.');
+          }
         });
     }
   };
