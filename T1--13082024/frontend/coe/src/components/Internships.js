@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import colleagues from './colleagues.jpg';
 
-const Interships = () => {
+const Internships = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -142,4 +142,4 @@ const Interships = () => {
   );
 };
 
-export default Interships;
+export default Internships;

@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
 import MBAprojects from "./components/MBAprojects";
 import Cvwriting from "./components/Cvwriting";
-import Interships from "./components/Interships";
+import Internships from './components/Internships';
 import Consulting from "./components/consulting";
 import EnquiryForm from "./components/enquiry";
 import Header from "./components/header"; // Import Header component
@@ -37,7 +37,7 @@ function App() {
     },
     {
       path: "/interships",
-      element: <Interships />,
+      element: <Internships />,
     },
     {
       path: "/consulting",
