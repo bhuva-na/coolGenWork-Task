@@ -83,9 +83,9 @@ const EnquiryForm = ({ showForm, handleClose }) => {
 
     // Validate all fields before submission
     Object.keys(formData).forEach((field) => validateField(field, formData[field]));
-
+    const API_URL = process.env.REACT_APP_API_URL;
     if (!Object.values(errors).some((error) => error)) {
-      axios.post(`${process.env.REACT_APP_API_URL}/send-enquiry`, formData)
+      axios.post(`${API_URL}/send-enquiry`, formData)
         .then(response => {
           alert(response.data.message || 'Form submitted successfully!');
           setFormData({
