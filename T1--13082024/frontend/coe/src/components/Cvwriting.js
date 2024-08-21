@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { MDBTypography } from "mdb-react-ui-kit";
-import Header from "./header";
 import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import rearveiw from "./rearveiw.jpg";

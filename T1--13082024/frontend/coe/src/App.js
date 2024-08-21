@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Only import once
 import COEdetails from "./components/COEdetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";

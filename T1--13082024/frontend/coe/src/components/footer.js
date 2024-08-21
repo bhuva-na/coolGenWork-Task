@@ -2,9 +2,7 @@ import React from 'react'
 import {
     MDBFooter,
     MDBContainer,
-    MDBCol,
-    MDBRow,
-    MDBBtn
+   
   } from 'mdb-react-ui-kit';
   
 const Footer = () => {
