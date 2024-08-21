@@ -18,7 +18,7 @@ const EnquiryForm = ({ showForm, handleClose }) => {
     email: '',
   });
 
-  const API_URL = process.env.REACT_APP_API_URL;
+  const API_URL = process.env.REACT_APP_API_URL || "https://backend-cool-14.onrender.com";
 
   const validateField = (name, value) => {
     let errorMsg = '';
@@ -83,7 +83,7 @@ const EnquiryForm = ({ showForm, handleClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate all fields before submission
+    
     Object.keys(formData).forEach((field) => validateField(field, formData[field]));
 
     if (!Object.values(errors).some((error) => error)) {
@@ -101,19 +101,16 @@ const EnquiryForm = ({ showForm, handleClose }) => {
             services: [],
             message: '',
           });
-          handleClose(); // Close the form
+          handleClose(); 
         })
         .catch(error => {
           if (error.response) {
-            // The server responded with a status code outside the 2xx range
             console.error('Server responded with error:', error.response.data);
             alert(`Submission failed: ${error.response.data.message || 'Unexpected error occurred.'}`);
           } else if (error.request) {
-            // The request was made but no response was received
             console.error('No response received:', error.request);
             alert('No response received from the server. Please try again later.');
           } else {
-            // Something else went wrong
             console.error('Error:', error.message);
             alert('An error occurred during submission. Please try again.');
           }
@@ -121,7 +118,7 @@ const EnquiryForm = ({ showForm, handleClose }) => {
     }
   };
 
-  if (!showForm) return null; // If not showing, render nothing
+  if (!showForm) return null; 
 
   return (
     <div className="modal-overlay" onClick={handleClose}>
