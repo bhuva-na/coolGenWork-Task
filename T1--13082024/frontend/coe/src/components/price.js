@@ -1,9 +1,13 @@
 import React from 'react'
+import Footer from './footer';
 
-const price = () => {
+const Price = () => {
   return (
-    <div>price</div>
+    <div>
+     
+    <Footer/>
+    </div>
   )
 }
 
-export default price
+export default Price;

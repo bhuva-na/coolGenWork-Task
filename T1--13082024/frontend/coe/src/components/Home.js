@@ -6,53 +6,71 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import COEdetails from "./COEdetails"; // Ensure correct casing and path
 import { MDBTypography } from "mdb-react-ui-kit";
-import twogirls from './twogirls.jpg'
-
+import crowd from './crowd.png';
+import girlvish from './girlvish.png';
+import img15 from './img15.jpeg'
 const Home = () => {
   return (
-    <div style={{backgroundColor:"#e7e6e6"}}>
-      {/* <Header /> */}
+    <div style={{ backgroundColor: "#FFFFFF" }}>
       <COEdetails />
 
       <Container className="mt-5">
-      <Row className="mb-6 align-items-center" xs={1} md={2}>
-          <Col className=" mb-3">
+        <Row className="mb-6" xs={1} md={2}>
+          {/* Image Column */}
+          <Col className="text-center mb-4 d-flex align-items-center justify-content-center">
             <img
-              src={twogirls}
+              src={img15}
               className="img-fluid rounded"
               alt="Technology"
-              style={{ maxWidth: "100%" }}
+              style={{ width: '100%', height: 'auto', maxHeight: '500px' }} // Ensuring the image fills the container appropriately
             />
           </Col>
-          <Col className="d-flex flex-column ">
-            <MDBTypography  className="mb-0" tag="h5" variant="h5" class="fw-bold">
-              Who We Are
-              
+
+          {/* Text Column */}
+          <Col className="d-flex flex-column justify-content-center">
+            <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+              <MDBTypography 
+                tag="h5" 
+                variant="h5" 
+                className="fw-bold mb-2" 
+                style={{ fontFamily: 'DM Sans, sans-serif', color: "black", textAlign: 'justify' }}>
+                Who We Are
               </MDBTypography>
-              <hr/>
+              <hr />
+
              
-              <MDBTypography tag="h5" variant="h5">
-              Empowering businesses of all sizes to thrive in the digital age
-            </MDBTypography>
-        <hr/>
-            <MDBTypography className="lead mb-0" tag="h5" variant="h5" class="fw-bold">
-              Mission
-              </MDBTypography>
             
-              <MDBTypography className="fs-5 lh-base">
-              We deliver cutting-edge solutions across cloud, AI, digital, branding, consulting, and sustainability to transform businesses and fuel their success.
-              <br></br>
-              Our commitment to budget-conscious innovation, exceptional quality, on-time delivery, and industry-leading standards ensures future-proof solutions for our clients
+
+              <MDBTypography 
+                tag="h5" 
+                variant="h5" 
+                className="fw-bold mb-2" 
+                style={{ textAlign: 'justify' }}>
+                Mission
               </MDBTypography>
-              <MDBTypography className="lead mb-0" tag="h5" variant="h5" class="fw-bold">
-              Vision
+              <MDBTypography 
+              tag="h5"
+                style={{ fontFamily: 'Matemasie', fontWeight: "500", color: "black", textAlign: 'justify' }}>
+                We deliver cutting-edge solutions across cloud, AI, digital, branding, consulting, and sustainability to transform businesses and fuel their success.
+                <br />
+                <br/>
+                Our commitment to budget-conscious innovation, exceptional quality, on-time delivery, and industry-leading standards ensures future-proof solutions for our clients.
               </MDBTypography>
-            
-              <MDBTypography className="fs-5 lh-sm">
-              Empowering businesses of all sizes to thrive in the digital age
+              <hr />
+
+              <MDBTypography 
+                tag="h5" 
+                variant="h5" 
+                className="fw-bold mb-2" 
+                style={{ textAlign: 'justify' }}>
+                Vision
               </MDBTypography>
-              
-           
+              <MDBTypography 
+               tag="h5"
+                style={{ fontFamily: 'Matemasie', fontWeight: "500", color: "black", textAlign: 'justify' }}>
+                Empowering businesses of all sizes to thrive in the digital age
+              </MDBTypography>
+            </div>
           </Col>
         </Row>
       </Container>

@@ -5,11 +5,14 @@ import { MDBTypography } from "mdb-react-ui-kit";
 import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import rearveiw from "./rearveiw.jpg";
+import img37 from './img37.jpeg'
+
 
 const Cvwriting = () => {
   const [hovered, setHovered] = useState(false);
 
   const cardStyle = {
+    backgroundColor: '#a6afc5',
     transition: "transform 0.3s, box-shadow 0.3s",
     transform: hovered ? "scale(1.05)" : "scale(1)",
     boxShadow: hovered
@@ -18,24 +21,24 @@ const Cvwriting = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "#e7e6e6" }}>
+    <div style={{ backgroundColor: "#FFFFFF" }}>
       {/* <Header /> */}
       <div className="how-it-works" style={{ padding: "2rem 1rem" }}>
         <Row className="align-items-center mb-5">
-          <Col xs={12} lg={6} className="mb-4 mb-lg-0">
+        <Col className="text-center mb-4">
             <img
-              src={rearveiw}
+              src={img37}
               className="img-fluid rounded"
-              alt="CV Writing Service"
-              style={{ width: "100%", height: "auto" }}
+              alt="Technology"
+              style={{ maxWidth: "100%" }}
             />
           </Col>
           <Col xs={12} lg={6} className="text-center text-lg-start">
             <MDBTypography tag="h1" variant="h1">
-              PRORESUME CRAFTING
+             <b  style={{color:"#ff3131"}}> PRORESUME</b>  <b>CRAFTING</b> 
             </MDBTypography>
             <hr />
-            <MDBTypography className="fs-5 lh-base">
+            <MDBTypography className="fs-5 lh-base"  style={{ fontFamily: 'Matemasie',fontWeight:"500",color: "black" }}>
               Enhance your career prospects with a professionally crafted CV.
               <br />
               <br />
@@ -61,7 +64,7 @@ const Cvwriting = () => {
                 <Card.Title>
                   <i className="fas fa-dollar-sign"></i> CV Writing Service
                 </Card.Title>
-                <Card.Text>
+                <Card.Text  style={{ fontFamily: 'Matemasie',fontWeight:"500" }}>
                   Get a professional CV that highlights your strengths and
                   experiences. Ideal for professionals at all levels.
                 </Card.Text>

@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Only import once
+
 import COEdetails from "./components/COEdetails";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home";
@@ -10,7 +10,8 @@ import Consulting from "./components/consulting";
 import EnquiryForm from "./components/enquiry";
 import Header from "./components/header"; // Import Header component
 import './App.css'; // Import additional CSS for modal styling
-
+import 'bootstrap/dist/css/bootstrap.min.css'; // Only import once
+import Price from "./components/price";
 function App() {
  
   const [showEnquiryForm, setShowEnquiryForm] = useState(false); // State for showing/hiding enquiry form
@@ -45,6 +46,10 @@ function App() {
     {
       path: "/enquiry",
       element: <EnquiryForm />,
+    },
+    {
+      path: "/charges",
+      element: <Price/>,
     },
   ]);
 

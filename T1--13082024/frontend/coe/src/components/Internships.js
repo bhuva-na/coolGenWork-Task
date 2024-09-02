@@ -6,7 +6,6 @@ import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import colleagues from './colleagues.jpg';
-
 const Internships = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
@@ -19,13 +18,14 @@ const Internships = () => {
   };
 
   const cardStyle = (index) => ({
+    backgroundColor: '#a6afc5',
     transition: 'transform 0.3s, box-shadow 0.3s',
     transform: hoveredCard === index ? 'scale(1.05)' : 'scale(1)',
     boxShadow: hoveredCard === index ? '0 4px 20px rgba(0, 0, 0, 0.2)' : '0 2px 10px rgba(0, 0, 0, 0.1)',
   });
 
   return (
-    <div style={{ backgroundColor: "#e7e6e6"}}>
+    <div style={{ backgroundColor: "#FFFFFF"}}>
       {/* <Header /> */}
       <Container className="mt-0">
         <Row className="mb-9 align-items-center" xs={1} md={2}>
@@ -39,10 +39,10 @@ const Internships = () => {
           </Col>
           <Col xs={12} lg={6} className="text-center text-lg-start">
             <MDBTypography tag="h1" variant="h1" className="mb-3 mt-3">
-              PATHWAY INTERNSHIP
+              <b>PATHWAY </b><b style={{ color: "#ff3131"}}>INTERNSHIP</b>
             </MDBTypography>
             <hr />
-            <MDBTypography className="lead">
+            <MDBTypography className="lead"  style={{ fontFamily: 'Matemasie',fontWeight:"500",color:'black' }}>
               Gain practical experience and earn a certificate by joining our internship programs.
               <br />
               <br />
@@ -53,7 +53,7 @@ const Internships = () => {
         </Row>
 
         <MDBTypography className="text-center" tag="h1">
-          HOW TO APPLY
+          <b>HOW TO APPLY</b>
         </MDBTypography>
         <hr />
         <MDBTypography note noteColor='info' className="text-center mb-8">
@@ -73,7 +73,7 @@ const Internships = () => {
                 <Card.Title>
                   <MDBIcon fas icon="graduation-cap" /> Certificates
                 </Card.Title>
-                <Card.Text>
+                <Card.Text  style={{ fontFamily: 'Matemasie',fontWeight:"500",color:'black' }}>
                   Receive a certificate recognizing your successful completion of the internship.
                 </Card.Text>
               </Card.Body>
@@ -91,7 +91,7 @@ const Internships = () => {
                 <Card.Title>
                   <MDBIcon fas icon="handshake" /> Career Counseling
                 </Card.Title>
-                <Card.Text>
+                <Card.Text  style={{ fontFamily: 'Matemasie',fontWeight:"500" ,color:'black'}}>
                   Access career counseling services for job placement support and interview preparation.
                 </Card.Text>
               </Card.Body>
@@ -109,7 +109,7 @@ const Internships = () => {
                 <Card.Title>
                   <MDBIcon fab icon="black-tie" /> Potential Job Offer
                 </Card.Title>
-                <Card.Text>
+                <Card.Text  style={{ fontFamily: 'Matemasie',fontWeight:"500",color:'black' }}>
                   Stand out for potential full-time job offers or extended internship opportunities.
                 </Card.Text>
               </Card.Body>
@@ -127,7 +127,7 @@ const Internships = () => {
                 <Card.Title>
                   <MDBIcon fas icon="award" /> Recognition and Awards
                 </Card.Title>
-                <Card.Text>
+                <Card.Text  style={{ fontFamily: 'Matemasie',fontWeight:"500",color:'black' }}>
                   Receive recognition and awards for outstanding performance and achievements.
                 </Card.Text>
               </Card.Body>

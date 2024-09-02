@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import '../App.css'; // Import your updated CSS file
+import '../App.css';
 import axios from 'axios';
 
 const EnquiryForm = ({ showForm, handleClose }) => {
@@ -83,7 +83,6 @@ const EnquiryForm = ({ showForm, handleClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    
     Object.keys(formData).forEach((field) => validateField(field, formData[field]));
 
     if (!Object.values(errors).some((error) => error)) {
@@ -101,7 +100,7 @@ const EnquiryForm = ({ showForm, handleClose }) => {
             services: [],
             message: '',
           });
-          handleClose(); 
+          handleClose();
         })
         .catch(error => {
           if (error.response) {
@@ -118,17 +117,14 @@ const EnquiryForm = ({ showForm, handleClose }) => {
     }
   };
 
-  if (!showForm) return null; 
+  if (!showForm) return null;
 
   return (
     <div className="modal-overlay" onClick={handleClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ backgroundColor: 'white' }}>
-        <button className="close-button" onClick={handleClose}>
-          &times;
-        </button>
         <Form onSubmit={handleSubmit}>
-          <Form.Group controlId="formName">
-            <Form.Label>NAME</Form.Label>
+          <Form.Group className="form-group" controlId="formName">
+            <Form.Label style={{ fontFamily: 'Matemasie', fontWeight: "500" }}>NAME</Form.Label>
             <Form.Control
               type="text"
               name="name"
@@ -140,8 +136,8 @@ const EnquiryForm = ({ showForm, handleClose }) => {
             <Form.Control.Feedback type="invalid">{errors.name}</Form.Control.Feedback>
           </Form.Group>
 
-          <Form.Group controlId="formContactNumber">
-            <Form.Label>CONTACT NUMBER</Form.Label>
+          <Form.Group className="form-group" controlId="formContactNumber">
+            <Form.Label style={{ fontFamily: 'Matemasie', fontWeight: "500" }}>CONTACT NUMBER</Form.Label>
             <Form.Control
               type="text"
               name="contactNumber"
@@ -153,8 +149,8 @@ const EnquiryForm = ({ showForm, handleClose }) => {
             <Form.Control.Feedback type="invalid">{errors.contactNumber}</Form.Control.Feedback>
           </Form.Group>
 
-          <Form.Group controlId="formEmail">
-            <Form.Label>EMAIL ID</Form.Label>
+          <Form.Group className="form-group" controlId="formEmail">
+            <Form.Label style={{ fontFamily: 'Matemasie', fontWeight: "500" }}>EMAIL ID</Form.Label>
             <Form.Control
               type="email"
               name="email"
@@ -166,8 +162,8 @@ const EnquiryForm = ({ showForm, handleClose }) => {
             <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
           </Form.Group>
 
-          <Form.Group controlId="formServices" style={{ marginTop: "5%" }}>
-            <Form.Label>SERVICES</Form.Label>
+          <Form.Group className="services-group" controlId="formServices" style={{ marginTop: "5%" }}>
+            <Form.Label style={{ fontFamily: 'Matemasie', fontWeight: "500" }}>SERVICES</Form.Label>
             {['RESEARCH PROJECTS', 'PATHWAY INTERNSHIP', 'PRORESUME CRAFTING', 'CAREERGUIDE CONSULTING', 'ALL THE ABOVE'].map((service) => (
               <Form.Check
                 key={service}
@@ -177,21 +173,30 @@ const EnquiryForm = ({ showForm, handleClose }) => {
                 value={service}
                 checked={formData.services.includes(service)}
                 onChange={handleCheckboxChange}
+                style={{ fontFamily: 'Matemasie', fontWeight: "500", width: '100%' }}
               />
             ))}
           </Form.Group>
 
-          <Form.Group controlId="formMessage" style={{ marginTop: "5%" }}>
-            <Form.Label>MESSAGE</Form.Label>
+          <Form.Group className="form-group" controlId="formMessage" style={{ marginTop: "5%" }}>
+            <Form.Label style={{ fontFamily: 'Matemasie', fontWeight: "500" }}>MESSAGE</Form.Label>
             <Form.Control
               as="textarea"
+              rows={3}
               name="message"
               value={formData.message}
               onChange={handleInputChange}
+              style={{ height: '100px' }}
             />
           </Form.Group>
 
-          <Button variant="primary" type="submit" style={{ marginTop: "5%" }}>Submit</Button>
+          <Button
+            variant="primary"
+            type="submit"
+            style={{ fontFamily: 'Matemasie', backgroundColor: "#0549d4", fontWeight: "700", color: "#ffffff", marginTop: "10%" }}
+          >
+            SUBMIT
+          </Button>
         </Form>
       </div>
     </div>

@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import '../App.css'; // Import your CSS file
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container, NavDropdown, Modal} from 'react-bootstrap';
 import { MDBIcon } from 'mdb-react-ui-kit';
 import EnquiryForm from './enquiry'; // Adjust the path as needed
-
+import internpic from './internpic.png'
 export default function Header() {
   const [expanded, setExpanded] = useState(false);
   const [showForm, setShowForm] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleToggle = () => setExpanded(!expanded);
   const handleShowEnquiryForm = () => setShowForm(true);
   const handleCloseEnquiryForm = () => setShowForm(false);
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
 
   const dropdownItemStyle = {
     transition: 'background-color 0.3s ease, color 0.3s ease',
@@ -24,7 +27,7 @@ export default function Header() {
   return (
     <>
       <Navbar expand="lg" expanded={expanded} sticky="top" className="custom-navbar">
-        <Container style={{backgroundColor:"#aaaaaa"}}>
+        <Container style={{ backgroundColor: "#DDE7FE" }}>
           <Navbar.Brand href="#">
             <img
               src="https://coolgentech.com/wp-content/uploads/2024/04/Coolgen-Logo-2.svg"
@@ -41,7 +44,10 @@ export default function Header() {
               <Nav.Link href="/" active>
                 HOME
               </Nav.Link>
-              <NavDropdown title="SERVICES" id="services-dropdown" active >
+              <Nav.Link href="#" onClick={handleShowModal} active>
+                PRICING
+              </Nav.Link>
+              <NavDropdown title="SERVICES" id="services-dropdown" active>
                 <NavDropdown.Item
                   href="/mbaprojects"
                   style={dropdownItemStyle}
@@ -81,14 +87,33 @@ export default function Header() {
               <Nav.Link href="https://www.linkedin.com/company/coolgen-solutions/" target="_blank">
                 <MDBIcon fab icon="linkedin" style={{ color: '#0e76a8', fontSize: '1.5rem', marginLeft: '10px' }} />
               </Nav.Link>
-              <Nav.Link href="https://www.instagram.com" target="_blank">
+              <Nav.Link href="https://www.instagram.com/coolgen_solutions_pvt.ltd/" target="_blank">
                 <MDBIcon fab icon="instagram" style={{ color: '#E4405F', fontSize: '1.5rem', marginLeft: '10px' }} />
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      {/* Enquiry Form Modal */}
       <EnquiryForm showForm={showForm} handleClose={handleCloseEnquiryForm} />
+
+      {/* Charges Image Modal */}
+      <Modal show={showModal} onHide={handleCloseModal} centered>
+        <Modal.Header closeButton>
+         
+        </Modal.Header>
+        <Modal.Body>
+          <img
+            src={internpic} // Replace with your image URL
+            alt="Charges"
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </Modal.Body>
+        <Modal.Footer>
+         
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }

@@ -1,0 +1,36 @@
+.hero-background {
+    background: linear-gradient(to right, #ffffff, #f0f0f0), url('./robotic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 60px 0;
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-text {
+    font-family: 'Matemasie', sans-serif;
+    font-weight: 500;
+    color: black;
+  }
+  
+  hr {
+    border-top: 2px solid #4ec8e0;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-background {
+      padding: 30px 0;
+    }
+  
+    .text-shadow {
+      text-shadow: none;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-background {
+      padding: 20px 0;
+    }
+  }
+  
