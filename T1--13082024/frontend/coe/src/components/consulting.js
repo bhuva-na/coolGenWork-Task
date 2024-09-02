@@ -2,7 +2,6 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { MDBTypography } from "mdb-react-ui-kit";
-
 import Footer from "./footer";
 import Container from "react-bootstrap/esm/Container";
 import img32 from './img32.jpg'

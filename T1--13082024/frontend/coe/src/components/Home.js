@@ -6,8 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import COEdetails from "./COEdetails"; // Ensure correct casing and path
 import { MDBTypography } from "mdb-react-ui-kit";
-import crowd from './crowd.png';
-import girlvish from './girlvish.png';
+
 import img15 from './img15.jpeg'
 const Home = () => {
   return (

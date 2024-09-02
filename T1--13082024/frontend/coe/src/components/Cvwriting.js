@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import { MDBTypography } from "mdb-react-ui-kit";
 import Footer from "./footer";
 import Card from "react-bootstrap/Card";
-import rearveiw from "./rearveiw.jpg";
 import img37 from './img37.jpeg'
 
 

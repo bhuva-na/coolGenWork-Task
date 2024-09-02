@@ -4,11 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MDBTypography } from 'mdb-react-ui-kit';
 import { MDBCol } from 'mdb-react-ui-kit';
-import finalLogoo from './finalLogoo.png';
-import cloudlogo from './cloudlogo.png'
+
 import background from './background.jpeg'; // Replace with your background image
 import '../App.css';
-import ani from './ani.mp4'
+
 import coolremovebg from './coolremovebg.png'
 const COEdetails = () => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     MDBFooter,
-    MDBContainer,
+
    
   } from 'mdb-react-ui-kit';
   
