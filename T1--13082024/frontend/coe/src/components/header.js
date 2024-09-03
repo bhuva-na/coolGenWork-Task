@@ -65,6 +65,31 @@ export default function Header() {
                   PATHWAY INTERNSHIP
                 </NavDropdown.Item>
                 <NavDropdown.Item
+                  href="/thesiswriting"
+                  style={dropdownItemStyle}
+                  onMouseEnter={(e) => (e.target.style = { ...dropdownItemStyle, ...dropdownItemHoverStyle })}
+                  onMouseLeave={(e) => (e.target.style = dropdownItemStyle)}
+                >
+                  THESIS STATEMENT
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="/leturature"
+                  style={dropdownItemStyle}
+                  onMouseEnter={(e) => (e.target.style = { ...dropdownItemStyle, ...dropdownItemHoverStyle })}
+                  onMouseLeave={(e) => (e.target.style = dropdownItemStyle)}
+                >
+                  LITERATURE SURVEY
+                  
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="/technicalwriting"
+                  style={dropdownItemStyle}
+                  onMouseEnter={(e) => (e.target.style = { ...dropdownItemStyle, ...dropdownItemHoverStyle })}
+                  onMouseLeave={(e) => (e.target.style = dropdownItemStyle)}
+                >
+                  TECHNICAL WRITING
+                </NavDropdown.Item>
+                <NavDropdown.Item
                   href="/cvwriting"
                   style={dropdownItemStyle}
                   onMouseEnter={(e) => (e.target.style = { ...dropdownItemStyle, ...dropdownItemHoverStyle })}

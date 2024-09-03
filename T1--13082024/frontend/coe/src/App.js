@@ -12,6 +12,9 @@ import Header from "./components/header"; // Import Header component
 import './App.css'; // Import additional CSS for modal styling
 import 'bootstrap/dist/css/bootstrap.min.css'; // Only import once
 import Price from "./components/price";
+import ThesisWriting from "./components/thesiswriting";
+import TechnicalWriting from "./components/technicalwriting";
+import LiteratureSurvey from "./components/literature";
 function App() {
  
   const [showEnquiryForm, setShowEnquiryForm] = useState(false); // State for showing/hiding enquiry form
@@ -50,6 +53,18 @@ function App() {
     {
       path: "/charges",
       element: <Price/>,
+    },
+    {
+      path: "/thesiswriting",
+      element: <ThesisWriting/>,
+    },
+    {
+      path: "/technicalwriting",
+      element: <TechnicalWriting/>,
+    },
+    {
+      path: "/leturature",
+      element: <LiteratureSurvey/>,
     },
   ]);
 

@@ -69,7 +69,7 @@ const COEdetails = () => {
           </Col>
           <Col xs={12} md={5} className="text-center mt-4 mt-md-0">
           <MDBCol lg="10" md="8" sm="12" className="mx-auto">
-    <img src={coolremovebg}  style={{ width: '100%', height: 'auto', maxHeight: '500px' }}/>
+    <img src={coolremovebg}  alt="cool" style={{ width: '100%', height: 'auto', maxHeight: '500px' }}/>
   </MDBCol>
           </Col>
         </Row>
