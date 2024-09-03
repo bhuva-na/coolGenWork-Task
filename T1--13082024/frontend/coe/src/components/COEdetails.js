@@ -38,17 +38,18 @@ const COEdetails = () => {
         <Row className="align-items-center">
           <Col xs={12} md={7} className="text-center text-md-start mb-4 mb-md-0 mt-5">
             <MDBTypography
-              tag="h1"
-              variant="h1"
+              tag="h7"
+              variant="h5"
               className="mb-3"
               style={{
                 fontFamily: 'DM Sans, sans-serif',
-                color: '#DDE7FE',
-                fontSize: 'calc(1.5rem + 1vw)',
+                color: '#ff3131',
+                fontSize: 'calc(1rem + 1vw)',
                 textAlign: 'justify',
               }}
             >
-              Welcome to the Center of Excellence
+              EXPLORE THE CENTER OF EXCELLENCE
+            
             </MDBTypography>
             <hr className="my-4" style={{ borderColor: 'white' }} />
             <MDBTypography
