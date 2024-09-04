@@ -38,8 +38,8 @@ const COEdetails = () => {
         <Row className="align-items-center">
           <Col xs={12} md={7} className="text-center text-md-start mb-4 mb-md-0 mt-5">
             <MDBTypography
-              tag="h7"
-              variant="h5"
+              tag="h1"
+              variant="h1"
               className="mb-3"
               style={{
                 fontFamily: 'DM Sans, sans-serif',

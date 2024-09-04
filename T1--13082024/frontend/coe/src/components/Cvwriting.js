@@ -61,9 +61,9 @@ const Cvwriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-dollar-sign"></i> CV Writing Service
+                  <i className="fas fa-dollar-sign" style={{ color: "red", padding: "3%" }}></i> <b>CV WRITING SERVICE</b>
                 </Card.Title>
-                <Card.Text  style={{ fontFamily: 'Matemasie',fontWeight:"500" }}>
+                <Card.Text  style={{ fontFamily: 'Matemasie',fontWeight:"700" }}>
                   Get a professional CV that highlights your strengths and
                   experiences. Ideal for professionals at all levels.
                 </Card.Text>

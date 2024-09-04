@@ -3,8 +3,8 @@ import { MDBTypography } from "mdb-react-ui-kit";
 import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import img25 from './img25.png';
-import img23 from './img23.jpg';
+import img25 from './girlai.jpg';
+import img23 from './womenbi.jpg';
 import { Col, Row } from "react-bootstrap";
 
 const ThesisWriting = () => {
@@ -45,7 +45,7 @@ const ThesisWriting = () => {
         >
           <div
             style={{
-              backgroundColor: 'rgba(0, 0, 0, 0.6)', // Adjust the opacity as needed
+              backgroundColor: 'rgba(0, 0, 0, 0.7)', // Adjust the opacity as needed
               padding: '50px',
               borderRadius: '8px', // Optional: to give a rounded look
               width: '80%', // Adjust the width as needed
@@ -57,7 +57,7 @@ const ThesisWriting = () => {
               <b>THESIS</b> <b style={{ color: "#ff3131" }}>WRITING</b>
             </MDBTypography>
             <hr />
-            <MDBTypography className="fs-5 lh-sm" style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'white' }}>
+            <MDBTypography className="fs-5 lh-sm" tag="h4" style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'white' }}>
               Develop your academic writing skills by working on comprehensive research projects.
               <br /><br />
               Enhance your ability to conduct original research and contribute to your field of study.
@@ -102,9 +102,9 @@ const ThesisWriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-book"></i> Comprehensive Research
+                  <i className="fas fa-book" style={{color:"red" ,padding:"2%"}}></i> <b> COMPREHENSIVE RESEARCH</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text  style={{ fontFamily: "Merriweather", fontWeight: "800", color: 'black' }}>
                   Engage in detailed research that enhances your academic credentials.
                 </Card.Text>
               </Card.Body>
@@ -120,9 +120,9 @@ const ThesisWriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="far fa-edit"></i> Writing Skills
+                  <i className="far fa-edit" style={{color:"red",padding:"2%"}}></i> <b> WRITING SKILLS</b> 
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily:"Merriweather", fontWeight: "800", color: 'black' }}>
                   Improve your academic writing and communication skills.
                 </Card.Text>
               </Card.Body>
@@ -138,9 +138,9 @@ const ThesisWriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-chalkboard-teacher"></i> Expert Guidance
+                  <i className="fas fa-chalkboard-teacher" style={{color:"red",padding:"2%"}}></i> <b> EXPERT GUIDANCE</b> 
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: "Merriweather", fontWeight: "700", color: 'black' }}>
                   Receive guidance from experienced advisors throughout the process.
                 </Card.Text>
               </Card.Body>
@@ -156,9 +156,9 @@ const ThesisWriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-award"></i> Academic Achievement
+                  <i className="fas fa-award" style={{color:"red",padding:"2%"}}></i>    <b>    ACADEMIC ACHIEVEMENT</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily:  "Merriweather", fontWeight: "700", color: 'black' }}>
                   Achieve academic recognition and enhance your qualifications.
                 </Card.Text>
               </Card.Body>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { MDBTypography } from "mdb-react-ui-kit";
+import { MDBIcon, MDBTypography } from "mdb-react-ui-kit";
 import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
@@ -80,76 +80,80 @@ const MBAprojects = () => {
         {/* Benefits Section */}
         <Row className="mb-6 g-4" xs={1} sm={2} md={3} lg={4}>
           <Col>
-            <Card
-              border="dark"
-              className="h-100 shadow-lg"
-              style={cardStyle(1)}
-              onMouseEnter={() => handleMouseEnter(1)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Card.Body>
-                <Card.Title>
-                  <i className="fas fa-code-branch"></i> Real-World Experience
-                </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500",color:'black' }}>
-                  Real-world experience working with industry leaders.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card
-              border="primary"
-              className="h-100 shadow-lg"
-              style={cardStyle(2)}
-              onMouseEnter={() => handleMouseEnter(2)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Card.Body>
-                <Card.Title>
-                  <i className="far fa-address-card"></i> Practical Application
-                </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500",color:'black' }}>
-                  Opportunity to apply academic knowledge to practical scenarios.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card
-              border="primary"
-              className="h-100 shadow-lg"
-              style={cardStyle(3)}
-              onMouseEnter={() => handleMouseEnter(3)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Card.Body>
-                <Card.Title>
-                  <i className="fas fa-dollar-sign"></i> Competitive Pay
-                </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500" ,color:'black'}}>
-                  Receive competitive pay for your contributions.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card
-              border="primary"
-              className="h-100 shadow-lg"
-              style={cardStyle(4)}
-              onMouseEnter={() => handleMouseEnter(4)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Card.Body>
-                <Card.Title>
-                  <i className="fas fa-laptop-code"></i> Enhance Your CV
-                </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500" ,color:'black'}}>
-                  Enhance your CV with substantial project work.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+          <Card
+    border="dark"
+    className="h-100 shadow-lg"
+    style={cardStyle(1)}
+    onMouseEnter={() => handleMouseEnter(1)}
+    onMouseLeave={handleMouseLeave}
+  >
+    <Card.Body>
+      <Card.Title>
+        <MDBIcon fas icon="code-branch" style={{ color: "red", padding: "2%" }} />
+        <b>REAL-WORLD EXPERIENCE</b>
+      </Card.Title>
+      <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
+        Real-world experience working with industry leaders.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+</Col>
+<Col>
+  <Card
+    border="dark"
+    className="h-100 shadow-lg"
+    style={cardStyle(2)}
+    onMouseEnter={() => handleMouseEnter(2)}
+    onMouseLeave={handleMouseLeave}
+  >
+    <Card.Body>
+      <Card.Title>
+        <MDBIcon far icon="address-card" style={{ color: "red", padding: "3%" }} />
+        <b>PRACTICAL APPLICATION</b>
+      </Card.Title>
+      <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
+        Opportunity to apply academic knowledge to practical scenarios.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+</Col>
+<Col>
+  <Card
+    border="dark"
+    className="h-100 shadow-lg"
+    style={cardStyle(3)}
+    onMouseEnter={() => handleMouseEnter(3)}
+    onMouseLeave={handleMouseLeave}
+  >
+    <Card.Body>
+      <Card.Title>
+        <MDBIcon fas icon="dollar-sign" style={{ color: "red", padding: "2%" }} />
+        <b>COMPETITIVE PAY</b>
+      </Card.Title>
+      <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
+        Receive competitive pay for your contributions.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+</Col>
+<Col>
+  <Card
+    border="dark"
+    className="h-100 shadow-lg"
+    style={cardStyle(4)}
+    onMouseEnter={() => handleMouseEnter(4)}
+    onMouseLeave={handleMouseLeave}
+  >
+    <Card.Body>
+      <Card.Title>
+        <MDBIcon fas icon="laptop-code" style={{ color: "red", padding: "2%" }} />
+        <b>ENHANCE YOUR CV</b>
+      </Card.Title>
+      <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
+        Enhance your CV with substantial project work.
+      </Card.Text>
+    </Card.Body>
+  </Card>
           </Col>
         </Row>
       </Container>

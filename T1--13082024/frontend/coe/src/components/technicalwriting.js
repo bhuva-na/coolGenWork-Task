@@ -4,9 +4,9 @@ import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 // import imgTechnical from './imgTechnical.jpg'; // Replace with your technical writing image
-import img12 from './img12.jpg'; // Replace with your technical writing process image
+import img12 from './penaibi.jpg'; // Replace with your technical writing process image
 import { Col, Row } from "react-bootstrap";
-import img29 from './img29.jpg'
+import img29 from './penai.jpg'
 const TechnicalWriting = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
@@ -45,7 +45,7 @@ const TechnicalWriting = () => {
         >
           <div
             style={{
-              backgroundColor: 'rgba(0, 0, 0, 0.6)',
+              backgroundColor: 'rgba(0, 0, 0, 0.7)',
               padding: '50px',
               borderRadius: '8px',
               width: '80%',
@@ -58,9 +58,9 @@ const TechnicalWriting = () => {
             </MDBTypography>
             <hr />
             <MDBTypography className="fs-5 lh-sm" style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'white' }}>
-              Enhance your ability to produce clear, concise, and accurate technical documents.
-              <br /><br />
-              Our program covers writing user manuals, guides, and documentation, preparing you for technical communication roles.
+              <h4>Enhance your ability to produce clear, concise, and accurate technical documents.</h4>
+              <br />
+              <h4>Our program covers writing user manuals, guides, and documentation, preparing you for technical communication roles.</h4>
             </MDBTypography>
           </div>
         </div>
@@ -80,9 +80,9 @@ const TechnicalWriting = () => {
             </MDBTypography>
             <hr />
             <MDBTypography className="fs-5 lh-base" style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
-              Our technical writing program equips you with skills to produce effective technical documents.
-              <br /><br />
-              Learn to create user manuals, guides, and documentation with expert feedback and guidance.
+              <h5>Our technical writing program equips you with skills to produce effective technical documents.</h5>
+              <br />
+             <h5>Learn to create user manuals, guides, and documentation with expert feedback and guidance.</h5> 
             </MDBTypography>
           </Col>
         </Row>
@@ -99,9 +99,9 @@ const TechnicalWriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-file-alt"></i> Detailed Documentation
+                  <i className="fas fa-file-alt" style={{color:"red",padding:"2%"}}></i> <b>   Detailed Documentation</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Learn to create detailed and user-friendly documentation.
                 </Card.Text>
               </Card.Body>
@@ -117,9 +117,9 @@ const TechnicalWriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-pen"></i> Writing Skills
+                  <i className="fas fa-pen" style={{color:"red",padding:"2%"}}></i>  <b>Writing Skills</b> 
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Enhance your technical writing and communication skills.
                 </Card.Text>
               </Card.Body>
@@ -135,9 +135,9 @@ const TechnicalWriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-chalkboard-teacher"></i> Expert Guidance
+                  <i className="fas fa-chalkboard-teacher" style={{color:"red",padding:"2%"}}></i><b> Expert Guidance</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Receive feedback and support from experienced technical writers.
                 </Card.Text>
               </Card.Body>
@@ -153,9 +153,9 @@ const TechnicalWriting = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-award"></i> Professional Development
+                  <i className="fas fa-award" style={{color:"red",padding:"2%"}}></i><b> Professional Development</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Achieve professional growth and enhance your career prospects in technical writing.
                 </Card.Text>
               </Card.Body>

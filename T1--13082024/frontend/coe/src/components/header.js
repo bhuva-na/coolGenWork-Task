@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <>
       <Navbar expand="lg" expanded={expanded} sticky="top" className="custom-navbar">
-        <Container style={{ backgroundColor: "#DDE7FE" }}>
+        <Container style={{ backgroundColor: "#ffffff" }}>
           <Navbar.Brand href="#">
             <img
               src="https://coolgentech.com/wp-content/uploads/2024/04/Coolgen-Logo-2.svg"

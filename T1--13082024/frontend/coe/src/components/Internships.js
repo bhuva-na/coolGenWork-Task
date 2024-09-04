@@ -84,9 +84,9 @@ const Internships = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <MDBIcon fas icon="graduation-cap" /> Certificates
+                  <MDBIcon fas icon="graduation-cap" style={{color:"red",padding:"2%"}}/><b>CERTIFICATES</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Receive a certificate recognizing your successful completion of the internship.
                 </Card.Text>
               </Card.Body>
@@ -102,9 +102,9 @@ const Internships = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <MDBIcon fas icon="handshake" /> Career Counseling
+                  <MDBIcon fas icon="handshake" style={{color:"red",padding:"2%"}}/><b> CAREER COUNSELING</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Access career counseling services for job placement support and interview preparation.
                 </Card.Text>
               </Card.Body>
@@ -120,9 +120,9 @@ const Internships = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <MDBIcon fab icon="black-tie" /> Potential Job Offer
+                  <MDBIcon fab icon="black-tie"style={{color:"red",padding:"2%"}} /><b>POTENTIAL JOB OFFER</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Stand out for potential full-time job offers or extended internship opportunities.
                 </Card.Text>
               </Card.Body>
@@ -138,9 +138,9 @@ const Internships = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <MDBIcon fas icon="award" /> Recognition and Awards
+                  <MDBIcon fas icon="award"style={{color:"red",padding:"2%"}} /><b>RECOGNITION AND AWARDS</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Receive recognition and awards for outstanding performance and achievements.
                 </Card.Text>
               </Card.Body>

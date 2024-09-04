@@ -3,8 +3,8 @@ import { MDBTypography } from "mdb-react-ui-kit";
 import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
-import img36 from './img36.jpg'; // Replace with your literature survey image
-import img11 from './img11.jpg'; // Replace with your literature survey process image
+import img36 from './penaiopbi.jpg'; // Replace with your literature survey image
+import img11 from './womenpic.jpg'; // Replace with your literature survey process image
 import { Col, Row } from "react-bootstrap";
 
 const LiteratureSurvey = () => {
@@ -100,9 +100,9 @@ const LiteratureSurvey = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-book"></i> Comprehensive Analysis
+                  <i className="fas fa-book" style={{color:"red",padding:"2%"}}></i> <b>Comprehensive Analysis</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Conduct an in-depth review of existing literature to understand the current state of research.
                 </Card.Text>
               </Card.Body>
@@ -118,9 +118,9 @@ const LiteratureSurvey = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="far fa-edit"></i> Research Gap Identification
+                  <i className="far fa-edit" style={{color:"red",padding:"2%"}}></i> <b>Research Gap Identification</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Identify gaps in existing research and opportunities for new studies.
                 </Card.Text>
               </Card.Body>
@@ -136,9 +136,9 @@ const LiteratureSurvey = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-chalkboard-teacher"></i> Expert Guidance
+                  <i className="fas fa-chalkboard-teacher" style={{color:"red",padding:"4%"}}></i><b>Expert Guidance</b> 
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Receive guidance from experienced researchers throughout the survey process.
                 </Card.Text>
               </Card.Body>
@@ -154,9 +154,9 @@ const LiteratureSurvey = () => {
             >
               <Card.Body>
                 <Card.Title>
-                  <i className="fas fa-award"></i> Academic Recognition
+                  <i className="fas fa-award" style={{color:"red",padding:"2%"}}></i> <b>Academic Recognition</b>
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "500", color: 'black' }}>
+                <Card.Text style={{ fontFamily: 'Matemasie', fontWeight: "700", color: 'black' }}>
                   Gain recognition for your thorough analysis and contributions to the field of study.
                 </Card.Text>
               </Card.Body>
