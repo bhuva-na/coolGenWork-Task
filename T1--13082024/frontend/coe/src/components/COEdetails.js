@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import { MDBTypography } from 'mdb-react-ui-kit';
 import { MDBCol } from 'mdb-react-ui-kit';
 
-import background from './background.jpeg'; // Replace with your background image
+import background from './background.jpeg'; 
 import '../App.css';
 
 import coolremovebg from './coolremovebg.png'
@@ -48,7 +48,7 @@ const COEdetails = () => {
                 textAlign: 'justify',
               }}
             >
-              EXPLORE THE CENTER OF EXCELLENCE
+              EXPLORE THE CUBEROOTS
             
             </MDBTypography>
             <hr className="my-4" style={{ borderColor: 'white' }} />

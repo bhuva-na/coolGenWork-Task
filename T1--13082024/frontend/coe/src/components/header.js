@@ -4,6 +4,7 @@ import { Navbar, Nav, Container, NavDropdown, Modal} from 'react-bootstrap';
 import { MDBIcon } from 'mdb-react-ui-kit';
 import EnquiryForm from './enquiry'; // Adjust the path as needed
 import internpic from './internpic.png'
+import cuberroots from './cube.png'
 export default function Header() {
   const [expanded, setExpanded] = useState(false);
   const [showForm, setShowForm] = useState(false);
@@ -30,8 +31,8 @@ export default function Header() {
         <Container style={{ backgroundColor: "#ffffff" }}>
           <Navbar.Brand href="#">
             <img
-              src="https://coolgentech.com/wp-content/uploads/2024/04/Coolgen-Logo-2.svg"
-              height="50"
+              src={cuberroots}
+              height="63"
               alt="Coolgen Logo"
               loading="lazy"
             />
