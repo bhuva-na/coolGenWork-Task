@@ -3,6 +3,9 @@ import { MDBTypography } from "mdb-react-ui-kit";
 import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
+import img25 from './girlai.jpg';
+import img23 from './womenbi.jpg';
+
 // import imgTechnical from './imgTechnical.jpg'; // Replace with your technical writing image
 import img12 from './penaibi.jpg'; // Replace with your technical writing process image
 import { Col, Row } from "react-bootstrap";
@@ -30,7 +33,7 @@ const TechnicalWriting = () => {
       <Container className="mt-0">
         <div
           style={{
-            backgroundImage: `url(${img12})`,
+            backgroundImage: `url(${img23})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             padding: '50px 0',

@@ -4,7 +4,7 @@ import { Navbar, Nav, Container, NavDropdown, Modal} from 'react-bootstrap';
 import { MDBIcon } from 'mdb-react-ui-kit';
 import EnquiryForm from './enquiry'; // Adjust the path as needed
 import internpic from './internpic.png'
-import cuberroots from './cube.png'
+import cuberroots from './cuberootslogo.png'
 export default function Header() {
   const [expanded, setExpanded] = useState(false);
   const [showForm, setShowForm] = useState(false);
@@ -32,7 +32,7 @@ export default function Header() {
           <Navbar.Brand href="#">
             <img
               src={cuberroots}
-              height="63"
+              height="68"
               alt="Coolgen Logo"
               loading="lazy"
             />
@@ -71,7 +71,7 @@ export default function Header() {
                   onMouseEnter={(e) => (e.target.style = { ...dropdownItemStyle, ...dropdownItemHoverStyle })}
                   onMouseLeave={(e) => (e.target.style = dropdownItemStyle)}
                 >
-                  THESIS STATEMENT
+                  THESIS WRITING
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href="/leturature"

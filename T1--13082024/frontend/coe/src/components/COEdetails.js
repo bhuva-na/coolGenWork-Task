@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { MDBTypography } from 'mdb-react-ui-kit';
 import { MDBCol } from 'mdb-react-ui-kit';
-
+import cubelogo from './cubesbg.png'
 import background from './background.jpeg'; 
 import '../App.css';
 
@@ -62,15 +62,15 @@ const COEdetails = () => {
                 textAlign: 'justify',
               }}
             >
-              Our Center of Excellence is dedicated to empowering individuals and organizations by providing expert guidance, valuable internships, professional CV writing services, career consulting, and MBA projects with competitive pay. Explore our services and start your journey towards excellence today!
+              Our Cuberoots is dedicated to empowering individuals and organizations by providing expert guidance, valuable internships, professional CV writing services, career consulting, and MBA projects with competitive pay. Explore our services and start your journey towards excellence today!
               <br />
               <br />
-              Turn your ideas into reality with our entrepreneurship and innovation support services. Whether you're a budding entrepreneur or an established business owner, our Centre of Excellence offers the resources, mentorship, and guidance you need to start, grow, and scale your business. Explore our entrepreneurial programs and take the first step towards building something extraordinary.
+              Turn your ideas into reality with our entrepreneurship and innovation support services. Whether you're a budding entrepreneur or an established business owner, our Cuberoots offers the resources, mentorship, and guidance you need to start, grow, and scale your business. Explore our entrepreneurial programs and take the first step towards building something extraordinary.
             </MDBTypography>
           </Col>
           <Col xs={12} md={5} className="text-center mt-4 mt-md-0">
           <MDBCol lg="10" md="8" sm="12" className="mx-auto">
-    <img src={coolremovebg}  alt="cool" style={{ width: '100%', height: 'auto', maxHeight: '500px' }}/>
+    <img src={cubelogo}  alt="cool" style={{ width: '100%', height: 'auto', maxHeight: '500px' }}/>
   </MDBCol>
           </Col>
         </Row>

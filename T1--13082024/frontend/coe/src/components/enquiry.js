@@ -164,7 +164,7 @@ const EnquiryForm = ({ showForm, handleClose }) => {
 
           <Form.Group className="services-group" controlId="formServices" style={{ marginTop: "5%" }}>
             <Form.Label style={{ fontFamily: 'Matemasie', fontWeight: "500" }}>SERVICES</Form.Label>
-            {['RESEARCH PROJECTS', 'PATHWAY INTERNSHIP', 'PRORESUME CRAFTING', 'CAREERGUIDE CONSULTING',"THESIS STATEMENT","LITERATURE SURVEY","TECHNICAL WRITING", 'ALL THE ABOVE'].map((service) => (
+            {['RESEARCH PROJECTS', 'PATHWAY INTERNSHIP', 'PRORESUME CRAFTING', 'CAREERGUIDE CONSULTING',"THESIS WRITING","LITERATURE SURVEY","TECHNICAL WRITING", 'ALL THE ABOVE'].map((service) => (
               <Form.Check
                 key={service}
                 type="checkbox"

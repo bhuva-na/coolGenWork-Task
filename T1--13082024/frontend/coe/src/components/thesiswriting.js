@@ -4,7 +4,7 @@ import Footer from "./footer";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import img25 from './girlai.jpg';
-import img23 from './womenbi.jpg';
+import img12 from './penaibi.jpg';
 import { Col, Row } from "react-bootstrap";
 
 const ThesisWriting = () => {
@@ -30,7 +30,7 @@ const ThesisWriting = () => {
       <Container className="mt-0">
         <div
           style={{
-            backgroundImage: `url(${img23})`,
+            backgroundImage: `url(${img12})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             padding: '50px 0',
