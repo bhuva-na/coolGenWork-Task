@@ -32,7 +32,7 @@ export default function Header() {
           <Navbar.Brand href="#">
             <img
               src={cuberroots}
-              height="68"
+              height="70"
               alt="Coolgen Logo"
               loading="lazy"
             />
